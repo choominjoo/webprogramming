@@ -1,1 +1,35 @@
-# webprogramming
+# 웹프로그래밍 수업 정리
+
+## 1. 웹프로그래밍 개요
+
+-   웹(Web): 인터넷에서 정보를 공유하는 공간
+-   웹프로그래밍: 웹사이트와 웹 애플리케이션을 만드는 기술
+
+## 2. 주요 기술
+
+-   **HTML (HyperText Markup Language)**: 웹 페이지 구조 정의
+-   **CSS (Cascading Style Sheets)**: 웹 페이지 디자인과 레이아웃
+-   **JavaScript**: 웹 페이지의 동적 기능 구현
+
+## 3. 백엔드 기술
+
+-   서버 측 언어: Python(Flask, Django), Java(Spring), Node.js 등
+-   데이터베이스: MySQL, MongoDB, PostgreSQL
+
+## 4. 프론트엔드 프레임워크
+
+-   React, Vue.js, Angular
+
+## 5. 학습 주제
+
+-   정적 웹페이지 제작 (HTML/CSS)
+-   동적 웹페이지 제작 (JavaScript)
+-   클라이언트-서버 구조 이해
+-   데이터베이스 연동
+-   RESTful API 설계
+
+## 6. 참고사항
+
+-   협업을 위한 Git/GitHub 활용
+-   크로스 브라우징 고려
+-   보안 기초 (HTTPS, 인증, 세션/쿠키)
