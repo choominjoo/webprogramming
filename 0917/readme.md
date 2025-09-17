@@ -9,4 +9,7 @@
 - <strong>details</strong> 상세 정보를 담는 시맨틱 태그
 - <strong>summary</strong> details로구성되는 블록의 제목 표시
 # 시맨틱 인라인 태그
-- 
+- <strong>mark</strong> 중요한 텍스트임을 표시
+- <strong>time</strong> 시간 정보임을 표시
+- <strong>meter</strong> 주어진 범위나 %의 데이터 양 표시
+- <strong>progress</strong> 작업의 진행 정도 표시
