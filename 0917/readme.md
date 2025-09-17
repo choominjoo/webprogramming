@@ -18,17 +18,17 @@
   - name 속성
   - action 속성
   - method 속성
-- 텍스트 입력, text
-- 데이터 목록을 가진 텍스트 입력 창, datalist
+- 텍스트 입력, <strong>text</strong>
+- 데이터 목록을 가진 텍스트 입력 창, <strong>datalist</strong>
 - 텍스트/이미지 버튼
   - 단순 버튼, button
   - submit 버튼, submit
-  - reset 버튼, reset
+  - reset 버튼, <strong>reset</strong>
   - 이미지 버튼, image
 - 선택형 입력
   - 체크박스, checkbox
   - 라디오 버튼, radio
   - 콤보박스, select
-- label로 캡션 만들기
+- <strong>label</strong>로 캡션 만들기
 - 색 입력, color
 - 시간 정보 입력
