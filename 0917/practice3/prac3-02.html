@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>웹 브라우저</title>
+        <meta charset="utf-8">
+        <style>
+            .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 2열 */
+            grid-template-rows: 1fr 1fr;    /* 2행 */
+            }
+        </style>
+    </head>
+    <body>
+        <h3>웹 브라우저 소개</h3>
+        <hr />
+        <div class="grid-container">
+            <figure>
+                <figcaption>
+                    브라우저라고 불리기도 하는 웹 브라우저(Web Browser)는, 
+                    사용자에게 웹 서버 컴퓨터에 접속하고 웹 페이지, 이미지, 
+                    동영상, 음악 등 다양한 데이터 다운받아 보여주는 소프트웨어이다. 
+                    <strong>그림 1-2</strong>는 대표적인 Chrome 웹 브라우저를 보여준다.
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/chrome.png" width="300" />
+                <figcaption>그림 1-2 구글 Chrome</figcaption>
+            </figure>
+            <figure>
+                <figcaption>
+                    웹페이지는 브라우저에 HTML5 문서임을 알리기 위해 
+                    <strong>그림 1-3</strong>과 같은 코드를 첫 라인에 삽입하여야 한다.
+                </figcaption>
+            </figure>
+            <figure>
+                <pre>
+                    <code>
+&lt;!doctype html&gt;
+&lt;/html&gt;
+&lt;...&gt;
+&lt;/html&gt;
+                    </code>
+                </pre>
+                <figcaption>그림 1-3 HTML5 문서 구성</figcaption>
+            </figure>
+        </div>
+    </body>
+</html>
