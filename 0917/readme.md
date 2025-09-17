@@ -14,3 +14,21 @@
 - <strong>meter</strong> - 주어진 범위나 %의 데이터 양 표시
 - <strong>progress</strong> - 작업의 진행 정도 표시
 # 웹 폼
+- <strong>form</strong> 태그
+  - name 속성
+  - action 속성
+  - method 속성
+- 텍스트 입력, text
+- 데이터 목록을 가진 텍스트 입력 창, datalist
+- 텍스트/이미지 버튼
+  - 단순 버튼, button
+  - submit 버튼, submit
+  - reset 버튼, reset
+  - 이미지 버튼, image
+- 선택형 입력
+  - 체크박스, checkbox
+  - 라디오 버튼, radio
+  - 콤보박스, select
+- label로 캡션 만들기
+- 색 입력, color
+- 시간 정보 입력
