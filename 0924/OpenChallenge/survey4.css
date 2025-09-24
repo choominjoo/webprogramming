@@ -1,0 +1,50 @@
+/* 제목 */
+h1 {
+    color: brown;
+    text-align: center;
+}
+
+/* 본문 */
+body {
+    background-color: aliceblue;
+}
+
+/* 설명문 */
+p {
+    font-family: '휴먼편지체', sans-serif;
+    font-size: 1em;
+    text-indent: 1em;
+}
+
+/* 입력 영역 */
+label {
+    font-family: '휴먼편지체', sans-serif;
+    font-size: 1em;
+}
+
+select {
+    font-size: 1em;
+}
+
+form {
+    background-color: pink;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* 항목 제목 */
+.title {
+    color: blue;
+    font-weight: bold;
+}
+
+/* 텍스트에리어 글자 색 */
+textarea {
+    color: gray
+}
+
+footer {
+    background: orange;
+    border-radius: 10px;
+    text-align: left;      
+}
