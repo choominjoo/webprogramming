@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>animation</title>
+        <style>
+            img {
+                width: 200px;
+                animation-name: rotation;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            
+            @keyframes rotation {
+                0% { transform: rotate(0deg); }
+                50% { transform: rotate(180deg); }
+                100% { transform: rotate(360deg); }
+            }
+        </style>
+    </head>
+    <body>
+        <h3>어지러워요</h3>
+        <hr />
+        <img src="img/spongebob.png">
+        <p>1초에 1회전</p>
+    </body>
+</html>
