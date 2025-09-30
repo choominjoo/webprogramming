@@ -1,0 +1,8 @@
+img {
+    width: 200px;
+    display: inline-block;
+    padding: 5px;
+    border: 15px solid transparent;
+    border-image: url('img/checkpattern.png') 15 round;
+    border-image-repeat: round;
+}

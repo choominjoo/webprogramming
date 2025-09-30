@@ -1,0 +1,12 @@
+table, td, th {
+    border: solid 1px black;
+}
+
+td:nth-of-type(3n) { width: 50px; }
+
+.colors#brown { background-color: brown; }
+.colors#deepskyblue { background-color: deepskyblue; }
+.colors#blueviolet { background-color: blueviolet; }
+.colors#gold { background-color: gold; }
+.colors#darkorange { background-color: darkorange; }
+.colors#olivedrab { background-color: olivedrab; }

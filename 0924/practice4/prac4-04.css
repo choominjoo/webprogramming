@@ -1,0 +1,22 @@
+.main {
+    background-color: cadetblue;
+}
+
+.headline {
+    font-size: 2rem;
+    text-align: center;
+    color: brown;
+}
+
+div.help {
+    color: blue;
+}
+
+p.help {
+    font-size: 2rem;
+    color: red;
+}
+
+#hot {
+    background-color: orangered;
+}

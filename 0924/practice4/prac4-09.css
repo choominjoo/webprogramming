@@ -1,0 +1,14 @@
+h3 {
+    color: gold;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 3px 3px 3px blue;
+}
+
+img {
+    width: 200px;
+}
+
+img:hover {
+    box-shadow: 0px 0px 20px -7px blue;
+}

@@ -1,0 +1,15 @@
+.main {
+    width: 150px;
+    height: 190px;
+    background-image: url("img/back.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.main:hover {
+    width: 150px;
+    height: 190px;
+    background-image: url("img/spade-7.png");
+    background-size: cover;
+    background-position: center;
+}
