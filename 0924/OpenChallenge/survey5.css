@@ -1,0 +1,27 @@
+body {
+    display: flex;  flex-direction: column;
+    justify-content: center;
+
+    margin: 0px;
+}
+
+header {
+    background-color: yellow;
+}
+
+section {
+    margin: 20px 0px;
+}
+
+form {
+    background-color: pink;
+    margin: 0px 20px;
+}
+
+textarea {
+    color: gray;
+}
+
+footer {
+    background-color: violet;
+}
