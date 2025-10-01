@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>이름 입력받고 인사하기</title>
+    </head>
+    <body>
+        <script>
+            let ret = prompt("이름을 입력하세요.");
+            if(ret == null) { // 취소 버튼을 누른 경우
+                alert("취소 버튼을 눌렀습니다.");
+            }
+            else if(ret == "") { // 이름을 입력하지 않은 경우
+                alert("이름을 입력하지 않았습니다.");
+            }
+            else { // 이름을 입력한 경우
+                alert(ret + "님 안녕하세요!");
+            }
+
+            document.write("<h3>오늘의 수업 내용</h3>");
+
+            function over(obj) {
+                obj.src = "img/banana.png";
+            }
+            function out(obj) {
+                obj.src = "img/apple.png";
+            }
+        </script>
+        <hr />
+        <img src="img/apple.png" alt="사과"
+            onmouseover="over(this)"
+            onmouseout="out(this)">
+        <a href="javascript:alert('클릭하셨어요?')">클릭해보세요</a>
+    </body>
+</html>
