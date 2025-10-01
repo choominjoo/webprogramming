@@ -1,0 +1,75 @@
+<!--OpenChallenge1에서 별 출력하는거 (순서대로, 좌우 반대로, 정삼각형으로, 다이아몬드 모양으로 총 4가지 만들기)-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>별 출력하기</title>
+    </head>
+    <body>
+        <script>
+            let line = prompt("몇 줄의 별을 출력할까요?");
+            if(line == null || line == "") {
+                alert("입력이 취소되었거나, 입력되지 않았습니다.");
+            }
+            else {
+                line = parseInt(line);
+                if(isNaN(line) || line <= 0) {
+                    alert("1 이상의 정수를 입력하세요.");
+                }
+                else {
+                    document.write("<h3>순서대로 별 출력하기</h3>");
+                    for(let i=1; i<=line; i++) {
+                        for(let j=1; j<=i; j++) {
+                            document.write("*");
+                        }
+                        document.write("<br />");
+                    }
+
+                    document.write("<h3>좌우 반대로 별 출력하기</h3>");
+                    for(let i=1; i<=line; i++) {
+                        for(let j=line; j>i; j--) {
+                            document.write("&nbsp;&nbsp;");
+                        }
+                        for(let k=1; k<=i; k++) {
+                            document.write("*");
+                        }
+                        document.write("<br />");
+                    }
+
+                    document.write("<h3>정삼각형 모양으로 별 출력하기</h3>");
+                    for(let i=1; i<=line; i++) {
+                        for(let j=line; j>i; j--) {
+                            document.write("&nbsp;&nbsp;");
+                        }
+                        for(let k=1; k<=(2*i-1); k++) {
+                            document.write("*");
+                        }
+                        document.write("<br />");
+                    }
+
+                    document.write("<h3>다이아몬드 모양으로 별 출력하기</h3>");
+                    // 위쪽
+                    for(let i=1; i<=line; i++) {
+                        for(let j=line; j>i; j--) {
+                            document.write("&nbsp;&nbsp;");
+                        }
+                        for(let k=1; k<=(2*i-1); k++) {
+                            document.write("*");
+                        }
+                        document.write("<br />");
+                    }
+                    // 아래쪽
+                    for(let i=line-1; i>=1; i--) {
+                        for(let j=line; j>i; j--) {
+                            document.write("&nbsp;&nbsp;");
+                        }
+                        for(let k=1; k<=(2*i-1); k++) {
+                            document.write("*");
+                        }
+                        document.write("<br />");
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
