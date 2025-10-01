@@ -1,0 +1,28 @@
+<!-- 년도를 입력받아 윤년(leap year)인지 평년(common year)인지를 판별하여 출력하는 프로그램 작성하시오.
+(4의 배수이고 100의 배수는 아니고 400의 배수인 해를 윤년이라고 함) -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>윤년인지 평년인지 판별하기</title>
+    </head>
+    <body>
+        <script>
+            let year = prompt("년도를 입력하세요.");
+            if(year == null) { // 취소 버튼을 누른 경우
+                alert("취소 버튼을 눌렀습니다.");
+            }
+            else if(year == "") { // 이름을 입력하지 않은 경우
+                alert("년도를 입력하지 않았습니다.");
+            }
+            else { // 년도를 입력한 경우
+                if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+                    alert(year + "년은 윤년입니다.");
+                }
+                else {
+                    alert(year + "년은 평년입니다.");
+                }
+            }
+        </script>
+    </body>
+</html>
