@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>큰 자리수와 낮은자리수 같은지 비교</title>
+    </head>
+    <body>
+        <script>
+            let ret = prompt("숫자 입력");
+        </script>
+        <h3>큰 자리수와 낮은자리수 같은지 비교</h3>
+        <hr />
+        <script>
+            let first = ret.charAt(0);
+            let last = ret.charAt(ret.length - 1);
+
+            if (first === last) {
+                document.write(ret + ": 성공");
+            }
+            else {
+                document.write(ret + ": 실패");
+            }
+        </script>
+    </body>
+</html>
