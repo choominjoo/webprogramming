@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>transform:rotate()</title>
+    </head>
+    <body>
+        <h3>클릭하면 2,3,4배로 옆으로 늘어납니다.</h3>
+        <hr />
+        <img id="pic" src="media/spongebob.png" width="200" height="150" alt="클릭 이미지" />
+
+        <script>
+            let scaleX = 1; // 현재 가로 배율
+            const obj = document.getElementById("pic");
+
+            obj.onclick = function () {
+                if (scaleX < 4) { // 4배까지 확대
+                    scaleX++;
+                    obj.style.transform = "scale(" + scaleX + ", 1)";
+                }
+            };
+        </script>
+    </body>
+</html>
