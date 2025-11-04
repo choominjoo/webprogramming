@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>onkeydown</title>
+        <script>
+            function calc(event) {
+                if(event.key === "Enter") {
+                    const expression = document.getElementById("expr").value;
+                    const resultBox = document.getElementById("result");
+
+                    try {
+                        const result = eval(expression);
+                        resultBox.value = result;
+                    }
+                    catch(e) {
+                        resultBox.value = "잘못된 수식입니다.";
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h3>계산기 만들기</h3>
+        <hr />
+        <p>수식을 입력하고 &lt;Enter&gt;를 입력하세요.</p>
+        식 <input type="text" id="expr" onkeydown="calc(event)"><br>
+        값 <input type="text" id="result">
+    </body>
+</html>
