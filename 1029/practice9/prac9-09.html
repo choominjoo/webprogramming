@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>onmouseover과 onmouseout</title>
+        <script>
+            window.onload = function() {
+                const items = document.getElementsByTagName("li");
+                const info = document.getElementById("info");
+
+                for(let i=0; i<items.length; i++) {
+                    items[i].onmouseover = function(e) {
+                        let text = "";
+                        switch(i) {
+                            case 0:
+                                text = "빨간자전거를 타고 서울, 대전, 대구, 부산 찍고, 목포, 인천을 거쳐 달린다.";
+                                break;
+                            case 1:
+                                text = "독서 습관을 기르기 위해 책 100권 도전";
+                                break;
+                            case 2:
+                                text = "체력을 단련하며 철인 3종 경기 준비";
+                                break;
+                            case 3:
+                                text = "프로그래밍 실력을 높이기 위한 자바스크립트 정복";
+                                break;
+                        }
+                        info.innerHTML = text;
+                        info.style.left = e.pageX + 10 + "px";
+                        info.style.top = e.pageY + 10 + "px";
+                        info.style.visibility = "visible";
+                    };
+                    items[i].onmouseout = function() {
+                        info.style.visibility = "hidden";
+                    };
+                }
+            };
+        </script>
+        <style>
+            #info {
+                position: absolute;
+                background-color: mintcream;
+                border: 1px solid green;
+                visibility: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>아이템에 마우스를 올리면 설명 출력</h3>
+        <hr />
+        <p>여름 방학 때 하고 싶은 것들</p>
+        <ul>
+            <li>자전거로 대한민국 일주</li>
+            <li>책 100권 읽기</li>
+            <li>철인 3종 경기 준비</li>
+            <li>자바스크립트 정복</li>
+        </ul>
+
+        <div id="info"></div>
+    </body>
+</html>
