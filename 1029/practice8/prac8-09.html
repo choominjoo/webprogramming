@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>라면을 끓이는 순서</title>
+    </head>
+    <body>
+        <h3>라면을 끓이는 순서</h3>
+        <hr />        
+        <ol id="ramenList" type="A" style="background-color:yellowgreen">
+            <li>물을 끓인다.</li>
+        </ol>
+        <script>
+            const list = document.getElementById("ramenList")
+
+            list.onclick = function() {
+                const step = prompt("라면 끓이는 순서를 입력하라");
+
+                if(step && step.trim() !== "") {
+                    const li = document.createElement("li");
+                    li.textContent = step.trim();
+                    list.appendChild(li);
+                }
+            };
+        </script>
+    </body>
+</html>
