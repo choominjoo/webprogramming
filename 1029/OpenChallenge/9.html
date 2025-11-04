@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>마우스 클릭 연습</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px;
+        }
+        td {
+            width: 50px;
+            height: 50px;
+            border: 1px solid gray;
+            text-align: center;
+            vertical-align: middle;
+        }
+        img {
+            width: 40px;
+            height: 40px;
+            visibility: hidden; /* 기본은 숨김 */
+        }
+    </style>
+    <script>
+        let currentIndex = -1;
+
+        function init() {
+            const table = document.getElementById("board");
+            for (let i = 0; i < 10; i++) {
+                const row = table.insertRow();
+                for (let j = 0; j < 10; j++) {
+                    const cell = row.insertCell();
+                    cell.innerHTML = "<img src='media/spongebob.png' alt=''>";
+                }
+            }
+
+            moveSponge();
+            table.onclick = moveSponge;
+        }
+
+        function moveSponge() {
+            const images = document.images;
+
+            // 이전 이미지 숨기기
+            if (currentIndex !== -1) {
+                images[currentIndex].style.visibility = "hidden";
+            }
+
+            // 새 위치 선택
+            let newIndex;
+            do {
+                newIndex = Math.floor(Math.random() * 100);
+            } while (newIndex === currentIndex);
+
+            // 새 위치 표시
+            images[newIndex].style.visibility = "visible";
+            currentIndex = newIndex;
+        }
+    </script>
+</head>
+<body onload="init()">
+    <h3>마우스 클릭 연습</h3>
+    <hr />
+    <table id="board"></table>
+</body>
+</html>
