@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Inter", "Noto Sans KR", sans-serif;
+            background: #E8F4FF;
+            color: #2e3a47;
+        }
+
+        /* ───────── 네비게이션 바 ───────── */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 140, 255, 0.18);
+            padding: 14px 0;
+            z-index: 999;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 36px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 600;
+            color: #007ACC;
+            transition: 0.2s;
+        }
+
+        .navbar a:hover {
+            color: #005d99;
+        }
+
+        section {
+            scroll-margin-top: 90px; /* 네비게이션 바 높이에 맞게 조절 */
+        }
+
+        .container {
+            text-align: center;
+            padding: 110px 0 40px 0; /* 네비게이션 공간 확보 */
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #BEE3FF;
+            margin-bottom: 18px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 25px auto;
+            width: 75%;
+            max-width: 900px;
+            min-height: 260px;
+            box-shadow: 0 6px 18px rgba(0, 140, 255, 0.18);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+            display: flex;               /* 추가 */
+            flex-direction: column;      /* 추가 */
+            justify-content: center;     /* 내용 세로 가운데 정렬 */
+            gap: 8px;                    /* 줄 간격 일정하게 */
+        }
+
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 26px rgba(0, 140, 255, 0.28);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 25px;
+            font-weight: 700;
+            color: #007ACC;
+        }
+
+        .skill-bar {
+            margin: 12px 0;
+            text-align: left;
+        }
+
+        .skill-bar span {
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        .bar {
+            background: #D9EEFF;
+            border-radius: 10px;
+            height: 16px;
+            margin-top: 6px;
+            overflow: hidden;
+        }
+
+        .fill {
+            height: 100%;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #59B5FF, #008CFF);
+        }
+
+        .contact-card a {
+            color: #007bce;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ───────── 네비게이션 바 ───────── -->
+<div class="navbar">
+    <ul>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#basic">Info</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#cslab">CS LAB</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+
+<div class="container">
+
+    <!-- 프로필 -->
+    <section id="profile">
+    <img src="src/profile.jpg" class="profile-img">
+    <div class="card">
+        <h2>추민주</h2>
+        <p>안녕하십니까! 24학번 추민주입니다.</p>
+        <p>관심분야는 <b>프론트엔드 및 UI/UX 디자인</b>입니다.</p>
+        <p>앞으로도 잘 부탁드립니다!</p>
+    </div>
+    </section>
+
+    <!-- 기본 정보 -->
+    <section id="basic">
+    <div class="card">
+        <h2>📍 기본 정보</h2>
+        <p>🎂 생년월일 : 2005년 4월 15일</p>
+        <p>🏫 학교 : 경성대학교 24학번</p>
+        <p>🎓 전공 : 소프트웨어학과</p>
+        <p>🏢 소속 : CS Lab, 제 8대 소프트웨어학과 학생회, 제 9대 소프트웨어학과 학생회</p>
+    </div>
+    </section>
+
+    <!-- 스킬 -->
+    <section id="skills">
+    <div class="card">
+        <h2>💪 Skills</h2>
+      
+        <div class="skill-bar">
+            <span>Python</span>
+            <div class="bar"><div class="fill" style="width: 50%;"></div></div>
+        </div>
+
+        <div class="skill-bar">
+            <span>C</span>
+            <div class="bar"><div class="fill" style="width: 20%;"></div></div>
+        </div>
+
+        <div class="skill-bar">
+            <span>Java</span>
+            <div class="bar"><div class="fill" style="width: 30%;"></div></div>
+        </div>
+        <div class="skill-bar">
+            <span>HTML, CSS</span>
+            <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+        </div>
+    </div>
+    </section>
+
+    <!-- CS LAB -->
+    <section id="cslab">
+    <div class="card">
+        <h2>🧪 CS LAB</h2>
+        <p>- 24년 5월 CS LAB 합류</p>
+        <p>- 랩실 회식 및 MT 참여</p>
+        <p>- 알고리즘 스터디 참여</p>
+        <p>- 랩실 게시판 만들기 프로젝트에서 프론트엔드 담당(현재 중단)</p>
+    </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+    <div class="card contact-card">
+        <h2>📌 Contact</h2>
+        <p>📱 Phone : 010-2433-7102</p>
+        <p>📧 Email : cutecmj04@naver.com</p>
+        <p>🏠 Location : Busan, South Korea</p>
+        <p>
+            🐱 GitHub :
+            <a href="https://github.com/choominjoo" target="_blank">https://github.com/choominjoo</a>
+        </p>
+    </div>
+    </section>
+
+</div>
+
+</body>
+</html>
